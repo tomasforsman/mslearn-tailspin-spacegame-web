@@ -57,3 +57,12 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
+- task: PublishCostData@1
+
+- task: DownloadCostData@1
+  inputs:
+    ConnectedServiceNameARM: 'Azure Prenumeration(1)(b6333d15-675f-4799-93e1-355ab07cead9)'
+    DaysToDownload: '60'
+    apiToUse: 'consumption'
+    filter: 'no'
