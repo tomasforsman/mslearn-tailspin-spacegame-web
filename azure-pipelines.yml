@@ -1,5 +1,4 @@
 trigger:
-- task: PublishCostData@1
   - '*'
   
 pool:
