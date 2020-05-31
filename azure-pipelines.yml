@@ -60,9 +60,10 @@ steps:
 
 - task: PublishCostData@1
 
-- task: DownloadCostData@1
+- task: keesschollaart.AzureCostInsights-Dev.AzureCostInsightsWidget.DownloadTask.DownloadCostData@1
   inputs:
     ConnectedServiceNameARM: 'Azure Prenumeration(b6333d15-675f-4799-93e1-355ab07cead9)'
     DaysToDownload: '10'
     apiToUse: 'usage'
     filter: 'no'
+    continueOnError: true
