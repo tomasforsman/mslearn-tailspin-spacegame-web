@@ -5,6 +5,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# History extention
+.history/
+.vscode/
+
 # User-specific files
 *.suo
 *.user
